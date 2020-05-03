@@ -12,6 +12,8 @@ Joey and I came up with this twist on Mapo Tofu over New Year's and for the mont
 
 This recipe begins by infusing a fresh chili oil and then quickly builds up a robust, flavorful sauce that will have you laughing and crying and sweating and generally just having a spectacular eating experience. Not for the faint of heart!
 
+![Mapo Tofu rice bowl](./mapo-tofu-bowl.jpg)
+
 ## Ingredients
 
 - 5T canola oil
