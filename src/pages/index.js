@@ -1,5 +1,6 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
+import Img from "gatsby-image"
 
 import Bio from "../components/bio"
 import Layout from "../components/layout"
@@ -13,12 +14,15 @@ const BlogIndex = ({ data, location }) => {
   return (
     <Layout location={location} title={siteTitle}>
       <SEO title="All posts" />
-      <Bio />
       {posts.map(({ node }) => {
         const title = node.frontmatter.title || node.fields.slug
+        const featuredImgFluid =
+          node.frontmatter.featuredImage?.childImageSharp?.fluid
+
         return (
           <article key={node.fields.slug}>
             <header>
+              {featuredImgFluid && <Img fluid={featuredImgFluid} />}
               <h3
                 style={{
                   marginBottom: rhythm(1 / 4),
@@ -36,6 +40,11 @@ const BlogIndex = ({ data, location }) => {
                   __html: node.frontmatter.description || node.excerpt,
                 }}
               />
+              <p>
+                <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
+                  Continue to recipe...
+                </Link>
+              </p>
             </section>
           </article>
         )
@@ -64,6 +73,13 @@ export const pageQuery = graphql`
             date(formatString: "MMMM DD, YYYY")
             title
             description
+            featuredImage {
+              childImageSharp {
+                fluid(maxWidth: 800) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
           }
         }
       }
