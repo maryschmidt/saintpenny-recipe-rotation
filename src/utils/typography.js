@@ -6,9 +6,10 @@ const typography = new Typography({
     baseFontSize: "16px",
     baseLineHeight: 1.75,
     scaleRatio: 5 / 2,
+    headerColor: "#4A2F03",
     headerFontFamily: ["Work Sans", "sans-serif"],
     headerWeight: 400,
-    bodyColor: "hsla(0,0%,0%,0.9)",
+    bodyColor: "#4A2F03",
     bodyFontFamily: ["Georgia", "serif"],
     bodyWeight: 400,
     overrideStyles: ({ adjustFontSizeTo, scale, rhythm }, options) => ({
@@ -60,15 +61,11 @@ const typography = new Typography({
             },
         },
         a: {
-            boxShadow: "0 1px 0 0 currentColor",
-            color: "#0565ad",
+            color: "#E60909",
             textDecoration: "none",
         },
-        "a:hover,a:active": {
-            boxShadow: "none",
-        },
         "mark,ins": {
-            background: "#0565ad",
+            background: "#E60909",
             color: "white",
             padding: `${rhythm(1 / 16)} ${rhythm(1 / 8)}`,
             textDecoration: "none",
