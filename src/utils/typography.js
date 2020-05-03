@@ -10,7 +10,7 @@ const typography = new Typography({
     headerFontFamily: ["Work Sans", "sans-serif"],
     headerWeight: 400,
     bodyColor: "#4A2F03",
-    bodyFontFamily: ["Georgia", "serif"],
+    bodyFontFamily: ["Work Sans", "sans-serif"],
     bodyWeight: 400,
     overrideStyles: ({ adjustFontSizeTo, scale, rhythm }, options) => ({
         h1: {
@@ -19,9 +19,25 @@ const typography = new Typography({
         p: {
             marginBottom: rhythm(1),
         },
+        strong: {
+            fontWeight: 500,
+        },
+        "article > footer": {
+            color: "#927e61",
+        },
+        "article > footer > span:first-child::after": {
+            display: "inline-block",
+            content: "''",
+            marginLeft: rhythm(1 / 4),
+            verticalAlign: "middle",
+            width: "0.25rem",
+            height: "0.25rem",
+            borderRadius: "0.25rem",
+            backgroundColor: "#927e61",
+        },
         blockquote: {
             ...scale(1 / 5),
-            color: gray(41),
+            color: gray(40),
             fontStyle: "italic",
             paddingLeft: rhythm(13 / 16),
             marginLeft: rhythm(-1),

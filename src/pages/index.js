@@ -17,6 +17,9 @@ const BlogIndex = ({ data, location }) => {
                 const title = node.frontmatter.title || node.fields.slug;
                 const featuredImgFluid =
                     node.frontmatter.featuredImage?.childImageSharp?.fluid;
+                const tags = node.frontmatter.tags
+                    .map((tag) => tag.toUpperCase())
+                    .join(", ");
 
                 return (
                     <article
@@ -40,13 +43,6 @@ const BlogIndex = ({ data, location }) => {
                                     {title}
                                 </Link>
                             </h2>
-                            <small
-                                style={{
-                                    fontFamily: `Work Sans, sans-serif`,
-                                }}
-                            >
-                                {node.frontmatter.date}
-                            </small>
                             {featuredImgFluid && (
                                 <Img
                                     fluid={featuredImgFluid}
@@ -70,11 +66,23 @@ const BlogIndex = ({ data, location }) => {
                                     style={{ boxShadow: `none` }}
                                     to={node.fields.slug}
                                 >
-                                    {node.frontmatter.cta ||
-                                        "Continue to recipe"}
+                                    {(node.frontmatter.cta ||
+                                        "Continue to recipe") + " "}
+                                    <span>»</span>
                                 </Link>
                             </p>
                         </section>
+                        <footer>
+                            <span
+                                style={{
+                                    fontFamily: `Work Sans, sans-serif`,
+                                    marginRight: rhythm(1 / 4),
+                                }}
+                            >
+                                {node.frontmatter.date.toUpperCase()}
+                            </span>
+                            <span>{tags}</span>
+                        </footer>
                     </article>
                 );
             })}
@@ -103,6 +111,7 @@ export const pageQuery = graphql`
                         title
                         description
                         cta
+                        tags
                         featuredImage {
                             childImageSharp {
                                 fluid(maxWidth: 800) {
