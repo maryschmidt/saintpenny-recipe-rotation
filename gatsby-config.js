@@ -6,7 +6,7 @@ module.exports = {
       summary: `who cooks as a way to bring order and goodness to the world around her.`,
     },
     description: `These are the foods I like to eat`,
-    siteUrl: ``,
+    siteUrl: `saintpenny.netlify.app`,
     social: {},
   },
   plugins: [
