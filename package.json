@@ -25,14 +25,15 @@
     "gatsby-source-filesystem": "^2.3.0",
     "gatsby-transformer-remark": "^2.8.0",
     "gatsby-transformer-sharp": "^2.5.0",
+    "gray-percentage": "^2.0.0",
     "prismjs": "^1.20.0",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-helmet": "^5.2.1",
     "react-typography": "^0.16.19",
-    "typeface-merriweather": "0.0.72",
-    "typeface-montserrat": "0.0.75",
+    "typeface-work-sans": "^0.0.72",
     "typography": "^0.16.19",
+    "typography-breakpoint-constants": "^0.16.19",
     "typography-theme-wordpress-2016": "^0.16.19"
   },
   "devDependencies": {

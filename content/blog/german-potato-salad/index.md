@@ -3,6 +3,8 @@ title: German Potato Salad
 date: "2020-05-01T23:49:52.824Z"
 description: Quick, easy, and great with just about everything, from hamburgers to fried pork cutlets. Need I say more? Okay, fine... it's also full of bacon.
 featuredImage: "potato-salad.JPG"
+cta: "Show me the bacon"
+tags: ["quick", "bacon", "side"]
 ---
 
 Quick, easy, and great with just about everything, from hamburgers to fried pork cutlets. Need I say more? Okay, fine... it's also full of bacon.
@@ -11,18 +13,18 @@ Like many foods I make, this dish is not at all authentic. However, it is truly 
 
 ## Ingredients
 
-- 1.5 lbs red potatoes, cleaned and cut into 1" pieces
-- 4 slices thick-cut bacon, diced
-- 1 small red onion, diced
-- Handful fresh parsley
+-   1.5 lbs red potatoes, cleaned and cut into 1" pieces
+-   4 slices thick-cut bacon, diced
+-   1 small red onion, diced
+-   Handful fresh parsley
 
 For the dressing, mix and set aside
 
-- 1/4c vinegar (I use mostly white, but you can throw in a splash of apple cider or malt if you like)
-- 3T sugar
-- 2T water
-- 1t salt
-- Black pepper to taste
+-   1/4c vinegar (I use mostly white, but you can throw in a splash of apple cider or malt if you like)
+-   3T sugar
+-   2T water
+-   1t salt
+-   Black pepper to taste
 
 ## Directions
 
