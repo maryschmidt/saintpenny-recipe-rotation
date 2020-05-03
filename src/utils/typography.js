@@ -19,11 +19,11 @@ const typography = new Typography({
         p: {
             marginBottom: rhythm(1),
         },
+        "p:last-child": {
+            marginBottom: rhythm(1 / 4),
+        },
         strong: {
             fontWeight: 500,
-        },
-        "article > footer": {
-            color: "#927e61",
         },
         "article > footer > span:first-child::after": {
             display: "inline-block",

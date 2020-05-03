@@ -24,15 +24,26 @@ const BlogIndex = ({ data, location }) => {
                 return (
                     <article
                         key={node.fields.slug}
+                        className="card"
                         style={{
-                            marginBottom: rhythm(3 / 2),
+                            marginBottom: rhythm(2),
                         }}
                     >
                         <header>
+                            {featuredImgFluid && (
+                                <Img
+                                    fluid={featuredImgFluid}
+                                    style={{
+                                        marginTop: rhythm(1 / 2),
+                                        marginBottom: rhythm(1 / 2),
+                                    }}
+                                />
+                            )}
                             <h2
                                 style={{
                                     color: "inherit",
-                                    marginBottom: 0,
+                                    marginTop: rhythm(1),
+                                    marginBottom: rhythm(2 / 3),
                                     fontFamily: `Work Sans, sans-serif`,
                                 }}
                             >
@@ -43,15 +54,6 @@ const BlogIndex = ({ data, location }) => {
                                     {title}
                                 </Link>
                             </h2>
-                            {featuredImgFluid && (
-                                <Img
-                                    fluid={featuredImgFluid}
-                                    style={{
-                                        marginTop: rhythm(1),
-                                        marginBottom: rhythm(1),
-                                    }}
-                                />
-                            )}
                         </header>
                         <section>
                             <p

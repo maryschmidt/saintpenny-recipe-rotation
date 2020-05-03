@@ -1,0 +1,7 @@
+article.card p {
+    margin-bottom: calc(1.75rem / 2);
+}
+
+article.card footer {
+    opacity: 0.65;
+}
