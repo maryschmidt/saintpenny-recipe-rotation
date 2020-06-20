@@ -25,7 +25,6 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
                     <Img fluid={featuredImgFluid} />
                     <h1
                         style={{
-                            fontFamily: `Work Sans, sans-serif`,
                             marginTop: rhythm(1),
                             marginBottom: 0,
                         }}
@@ -35,7 +34,6 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
                     <p
                         style={{
                             ...scale(-1 / 5),
-                            fontFamily: `Work Sans, sans-serif`,
                             display: `block`,
                             marginBottom: rhythm(1),
                         }}

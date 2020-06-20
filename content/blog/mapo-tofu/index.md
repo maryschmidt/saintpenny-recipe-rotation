@@ -4,7 +4,7 @@ date: "2020-03-20T02:30:14.478Z"
 description: Joey and I came up with this twist on Mapo Tofu over New Year's and for the months following his visits this was always on my grocery list. It's extremely adaptable — easily made plant based, and pretty much any in-season veggies bring new dimension to the dish.
 featuredImage: "mapo-tofu.jpg"
 cta: "Read more"
-tags: ["flexible", "main", "rice"]
+tags: ["Flexible", "Main", "Rice"]
 ---
 
 Spicy food lovers, this one's for you.

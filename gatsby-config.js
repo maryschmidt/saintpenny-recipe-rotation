@@ -1,6 +1,6 @@
 module.exports = {
     siteMetadata: {
-        title: `saintpenny recipe rotation`,
+        title: `Saint Penny Recipe Rotation`,
         author: {
             name: `Mary Schmidt`,
             summary: `aims to bring sunshine and order to the world around her with her cooking.`,
@@ -54,7 +54,7 @@ module.exports = {
         {
             resolve: `gatsby-plugin-google-analytics`,
             options: {
-                //trackingId: `ADD YOUR TRACKING ID HERE`,
+                trackingId: `UA-170180027-1`,
             },
         },
         `gatsby-plugin-feed`,
@@ -75,6 +75,7 @@ module.exports = {
             resolve: `gatsby-plugin-typography`,
             options: {
                 pathToConfigModule: `src/utils/typography`,
+                omitGoogleFont: true,
             },
         },
         // this (optional) plugin enables Progressive Web App + Offline functionality

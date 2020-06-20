@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "gatsby";
 
-import { rhythm, scale } from "../utils/typography";
+import { rhythm } from "../utils/typography";
 
 const Layout = ({ location, title, children }) => {
     const rootPath = `${__PATH_PREFIX__}/`;
@@ -11,10 +11,8 @@ const Layout = ({ location, title, children }) => {
         header = (
             <h1
                 style={{
-                    ...scale(1.5),
                     marginBottom: rhythm(1.5),
                     marginTop: 0,
-                    fontFamily: `Work Sans, sans-serif`,
                 }}
             >
                 <Link
@@ -32,7 +30,6 @@ const Layout = ({ location, title, children }) => {
         header = (
             <h3
                 style={{
-                    fontFamily: `Work Sans, sans-serif`,
                     marginTop: 0,
                 }}
             >
@@ -55,7 +52,7 @@ const Layout = ({ location, title, children }) => {
                     marginLeft: `auto`,
                     marginRight: `auto`,
                     maxWidth: rhythm(24),
-                    padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
+                    padding: `${rhythm(1)} ${rhythm(1 / 2)} ${rhythm(1 / 2)}`,
                 }}
             >
                 <header>{header}</header>

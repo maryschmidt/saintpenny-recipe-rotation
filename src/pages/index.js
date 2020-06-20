@@ -17,9 +17,7 @@ const BlogIndex = ({ data, location }) => {
                 const title = node.frontmatter.title || node.fields.slug;
                 const featuredImgFluid =
                     node.frontmatter.featuredImage?.childImageSharp?.fluid;
-                const tags = node.frontmatter.tags
-                    .map((tag) => tag.toUpperCase())
-                    .join(", ");
+                const tags = node.frontmatter.tags.join(", ");
 
                 return (
                     <article
@@ -44,7 +42,6 @@ const BlogIndex = ({ data, location }) => {
                                     color: "inherit",
                                     marginTop: rhythm(1),
                                     marginBottom: rhythm(2 / 3),
-                                    fontFamily: `Work Sans, sans-serif`,
                                 }}
                             >
                                 <Link
@@ -77,13 +74,19 @@ const BlogIndex = ({ data, location }) => {
                         <footer>
                             <span
                                 style={{
-                                    fontFamily: `Work Sans, sans-serif`,
+                                    fontSize: "0.9rem",
                                     marginRight: rhythm(1 / 4),
                                 }}
                             >
-                                {node.frontmatter.date.toUpperCase()}
+                                {node.frontmatter.date}
                             </span>
-                            <span>{tags}</span>
+                            <span
+                                style={{
+                                    fontSize: "0.9rem",
+                                }}
+                            >
+                                {tags}
+                            </span>
                         </footer>
                     </article>
                 );

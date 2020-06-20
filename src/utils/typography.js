@@ -6,16 +6,14 @@ const typography = new Typography({
     baseFontSize: "16px",
     baseLineHeight: 1.75,
     scaleRatio: 5 / 2,
-    headerColor: "#4A2F03",
-    headerFontFamily: ["Work Sans", "sans-serif"],
+    headerColor: "#D90A0A",
+    headerFontFamily: ["Noto Serif", "serif"],
     headerWeight: 400,
     bodyColor: "#4A2F03",
-    bodyFontFamily: ["Work Sans", "sans-serif"],
+    bodyFontFamily: ["Noto Sans", "sans-serif"],
     bodyWeight: 400,
     overrideStyles: ({ adjustFontSizeTo, scale, rhythm }, options) => ({
-        h1: {
-            fontFamily: ["Montserrat", "sans-serif"].join(","),
-        },
+        h1: {},
         p: {
             marginBottom: rhythm(1),
         },
@@ -58,13 +56,13 @@ const typography = new Typography({
             listStyle: "disc",
         },
         "ul > li": {
-            marginBottom: rhythm(1 / 4),
+            marginBottom: rhythm(1 / 8),
         },
         "ul,ol": {
             marginLeft: rhythm(3 / 4),
         },
         "ol > li": {
-            marginBottom: rhythm(2 / 3),
+            marginBottom: rhythm(1 / 4),
         },
         [MOBILE_MEDIA_QUERY]: {
             "ul,ol": {
@@ -77,11 +75,11 @@ const typography = new Typography({
             },
         },
         a: {
-            color: "#E60909",
+            color: "#D90A0A",
             textDecoration: "none",
         },
         "mark,ins": {
-            background: "#E60909",
+            background: "#D90A0A",
             color: "white",
             padding: `${rhythm(1 / 16)} ${rhythm(1 / 8)}`,
             textDecoration: "none",
