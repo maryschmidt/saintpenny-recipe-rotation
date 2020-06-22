@@ -1,8 +1,8 @@
 import React from "react";
 import { Link, graphql } from "gatsby";
 import Img from "gatsby-image";
+import Image from "gatsby-image";
 
-import Bio from "../components/bio";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import { rhythm, scale } from "../utils/typography";
@@ -13,7 +13,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
     const { previous, next } = pageContext;
     const featuredImgFluid =
         post.frontmatter.featuredImage.childImageSharp.fluid;
-
+    const { author } = data.markdownRemark.frontmatter;
     return (
         <Layout location={location} title={siteTitle}>
             <SEO
@@ -48,7 +48,29 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
                     }}
                 />
                 <footer>
-                    <Bio />
+                    <div
+                        style={{
+                            display: `flex`,
+                            marginBottom: rhythm(2.5),
+                        }}
+                    >
+                        <Image
+                            fixed={author.photo.childImageSharp.fixed}
+                            alt={author.id}
+                            style={{
+                                marginRight: rhythm(1 / 2),
+                                marginBottom: 0,
+                                minWidth: 50,
+                                borderRadius: `100%`,
+                            }}
+                            imgStyle={{
+                                borderRadius: `50%`,
+                            }}
+                        />
+                        <p>
+                            <strong>{author.id}</strong> {author.summary}
+                        </p>
+                    </div>
                 </footer>
             </article>
 
@@ -97,6 +119,17 @@ export const pageQuery = graphql`
             html
             frontmatter {
                 title
+                author {
+                    id
+                    summary
+                    photo {
+                        childImageSharp {
+                            fixed(width: 50, height: 50) {
+                                ...GatsbyImageSharpFixed
+                            }
+                        }
+                    }
+                }
                 date(formatString: "MMMM DD, YYYY")
                 description
                 featuredImage {

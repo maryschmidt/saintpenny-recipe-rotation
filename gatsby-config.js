@@ -16,6 +16,14 @@ module.exports = {
         {
             resolve: `gatsby-source-filesystem`,
             options: {
+                path: `${__dirname}/src/data`,
+                name: `data`,
+            },
+        },
+        `gatsby-transformer-yaml`,
+        {
+            resolve: `gatsby-source-filesystem`,
+            options: {
                 path: `${__dirname}/content/blog`,
                 name: `blog`,
             },
@@ -82,4 +90,7 @@ module.exports = {
         // To learn more, visit: https://gatsby.dev/offline
         // `gatsby-plugin-offline`,
     ],
+    mapping: {
+        "MarkdownRemark.frontmatter.author": `AuthorYaml`,
+    },
 };
