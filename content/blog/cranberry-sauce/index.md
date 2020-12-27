@@ -2,11 +2,11 @@
 title: Cranberry Sauce
 author: Mary Schmidt
 date: "2020-01-19T00:00:00.824Z"
-description: "90 Year" Cranberries
+description: The first year I made these, my grandfather told me that in his 90 years of life, cranberries were the one food his family ate every year, even through poverty and the Great Depression. Out of all those cranberries, these were his favorite. I hope you enjoy them as well. 
 tags: ["Holiday", "Side"]
 ---
 
-"90 years, best cranberries" -- Grandpa
+The first year I made these, my grandfather told me that in his 90 years of life, cranberries were the one food his family ate every year, even through poverty and the Great Depression. Out of all those cranberries, these were his favorite. I hope you enjoy them as well.
 
 ## Ingredients
 
