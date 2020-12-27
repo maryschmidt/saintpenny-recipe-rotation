@@ -3,7 +3,7 @@ title: German Potato Salad
 author: Mary Schmidt
 date: "2020-05-01T23:49:52.824Z"
 description: Quick, easy, and great with just about everything, from hamburgers to fried pork cutlets. Need I say more? Okay, fine... it's also full of bacon.
-featuredImage: "potato-salad.JPG"
+featuredImage: "potato-salad.jpg"
 cta: "Show me the bacon"
 tags: ["Quick", "Bacon", "Side"]
 ---

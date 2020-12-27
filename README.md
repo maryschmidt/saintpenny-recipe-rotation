@@ -11,7 +11,7 @@ This project relies on node.js and yarn. To install these, we recommend using [h
 ```shell
 brew update
 brew install node yarn
-nvm install 10.16
+nvm install 14.9.0
 nvm use
 ```
 

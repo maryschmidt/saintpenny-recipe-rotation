@@ -12,7 +12,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
     const siteTitle = data.site.siteMetadata.title;
     const { previous, next } = pageContext;
     const featuredImgFluid =
-        post.frontmatter.featuredImage.childImageSharp.fluid;
+        post.frontmatter.featuredImage?.childImageSharp.fluid;
     const { author } = data.markdownRemark.frontmatter;
     return (
         <Layout location={location} title={siteTitle}>
@@ -22,7 +22,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
             />
             <article>
                 <header>
-                    <Img fluid={featuredImgFluid} />
+                    {featuredImgFluid && <Img fluid={featuredImgFluid} />}
                     <h1
                         style={{
                             marginTop: rhythm(1),
