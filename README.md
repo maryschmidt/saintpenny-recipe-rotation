@@ -1,5 +1,5 @@
 <h1 align="center">
-  Saint Penny Recipe Rotation
+  [Saint Penny Recipe Rotation](https://saintpenny.netlify.app/)
 </h1>
 
 ## 🚀 Quick start
