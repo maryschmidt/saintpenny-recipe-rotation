@@ -1,16 +1,19 @@
-const path = require(`path`);
-const { createFilePath } = require(`gatsby-source-filesystem`);
+const path = require("path");
+const kebabCase = require("lodash/kebabCase");
+const { createFilePath } = require("gatsby-source-filesystem");
 
-exports.createPages = async ({ graphql, actions }) => {
+exports.createPages = async ({ graphql, actions, reporter }) => {
     const { createPage } = actions;
 
-    const blogPost = path.resolve(`./src/templates/blog-post.js`);
+    const blogPost = path.resolve("src/templates/blog-post.js");
+    const categoryTemplate = path.resolve("src/templates/categories.js");
+
     const result = await graphql(
         `
             {
-                allMarkdownRemark(
+                postsRemark: allMarkdownRemark(
                     sort: { fields: [frontmatter___date], order: DESC }
-                    limit: 1000
+                    limit: 2000
                 ) {
                     edges {
                         node {
@@ -19,8 +22,14 @@ exports.createPages = async ({ graphql, actions }) => {
                             }
                             frontmatter {
                                 title
+                                categories
                             }
                         }
+                    }
+                }
+                categoriesGroup: allMarkdownRemark(limit: 2000) {
+                    group(field: frontmatter___categories) {
+                        fieldValue
                     }
                 }
             }
@@ -28,12 +37,13 @@ exports.createPages = async ({ graphql, actions }) => {
     );
 
     if (result.errors) {
-        throw result.errors;
+        reporter.panicOnBuild(`Error while running GraphQL query.`);
+        return;
     }
 
-    // Create blog posts pages.
-    const posts = result.data.allMarkdownRemark.edges;
+    const posts = result.data.postsRemark.edges;
 
+    // Create blog posts pages.
     posts.forEach((post, index) => {
         const previous =
             index === posts.length - 1 ? null : posts[index + 1].node;
@@ -46,6 +56,20 @@ exports.createPages = async ({ graphql, actions }) => {
                 slug: post.node.fields.slug,
                 previous,
                 next,
+            },
+        });
+    });
+
+    // Extract category data from query
+    const categories = result.data.categoriesGroup.group;
+
+    // Make category pages
+    categories.forEach((category) => {
+        createPage({
+            path: `/categories/${kebabCase(category.fieldValue)}/`,
+            component: categoryTemplate,
+            context: {
+                category: category.fieldValue,
             },
         });
     });

@@ -3,7 +3,8 @@ title: Bolognese
 author: Mary Schmidt
 date: "2020-06-06T00:00:00.824Z"
 description: Delicious pasta sauce!
-tags: ["Main", "Pasta"]
+categories: ["Italian", "Meat", "Main", "Flexible", "Favorites"]
+tags: ["Main", "Pasta", "Italian", "Beef", "Flexible", "Tomato", "Lemon"]
 ---
 
 ## Ingredients

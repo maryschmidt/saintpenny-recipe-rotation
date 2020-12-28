@@ -4,7 +4,8 @@ author: Mary Schmidt
 date: "2020-12-03T00:00:00.824Z"
 description: My grandma used to make this dessert all the time as we grew up. Delicious with ice cream or spooned into oatmeal.
 featuredImage: "cherry-cobbler.jpg"
-tags: ["Vegetarian", "Dessert"]
+categories: ["Dessert", "Vegetarian", "Quick"]
+tags: ["Vegetarian", "Dessert", "Cherry", "Blueberry"]
 ---
 
 My grandma used to make this dessert all the time as we grew up. Delicious with ice cream or spooned into oatmeal.
