@@ -11,9 +11,7 @@ const Categories = ({ pageContext, data, location }) => {
     const { category } = pageContext;
     const { edges, totalCount } = data.allMarkdownRemark;
     const siteTitle = data.site.siteMetadata.title;
-    const tagHeader = `${totalCount} post${
-        totalCount === 1 ? "" : "s"
-    } in ${category} category`;
+    const tagHeader = `${category} (${totalCount})`;
 
     return (
         <Layout location={location} title={siteTitle}>
