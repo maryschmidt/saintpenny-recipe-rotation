@@ -5,7 +5,8 @@ date: "2020-05-01T23:49:52.824Z"
 description: Quick, easy, and great with just about everything, from hamburgers to fried pork cutlets. Need I say more? Okay, fine... it's also full of bacon.
 featuredImage: "potato-salad.jpg"
 cta: "Show me the bacon"
-tags: ["Quick", "Bacon", "Side"]
+categories: ["Quick", "Side", "Favorites"]
+tags: ["Quick", "Bacon", "Potato", "Side"]
 ---
 
 Quick, easy, and great with just about everything, from hamburgers to fried pork cutlets. Need I say more? Okay, fine... it's also full of bacon.

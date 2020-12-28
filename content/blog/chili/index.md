@@ -3,7 +3,8 @@ title: Chili
 author: Mary Schmidt
 date: "2020-10-31T00:00:00.824Z"
 description: What's more personal than a chili recipe? This is my own chili recipe, inspired by my mother's and my time spent in Boston. Hope you enjoy it!
-tags: ["Main", "Meat"]
+categories: ["Main", "Meat", "Flexible", "Favorites"]
+tags: ["Main", "Beef", "Bean", "Chile", "Tomato"]
 ---
 
 What's more personal than a chili recipe? This is my own chili recipe, inspired by my mother's and my time spent in Boston. Hope you enjoy it!
