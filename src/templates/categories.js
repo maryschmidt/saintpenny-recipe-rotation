@@ -15,7 +15,7 @@ const Categories = ({ pageContext, data, location }) => {
 
     return (
         <Layout location={location} title={siteTitle}>
-            <SEO title="All posts" />
+            <SEO title={`Posts for ${category} category`} />
             <h1>{tagHeader}</h1>
                 {edges.map(({ node }) => {
                     return (

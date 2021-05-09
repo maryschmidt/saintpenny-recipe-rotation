@@ -2,12 +2,16 @@
 title: Chili
 author: Mary Schmidt
 date: "2020-10-31T00:00:00.824Z"
-description: What's more personal than a chili recipe? This is my own chili recipe, inspired by my mother's and my time spent in Boston. Hope you enjoy it!
+description: My favorite thing about winter? It’s chili season. Can you make chili during the other seasons? Sure, and I do, but when winter rolls around chili’s always the first thing that comes to mind.
+featuredImage: "chili.jpg"
 categories: ["Main", "Meat", "Flexible", "Favorites"]
-tags: ["Main", "Beef", "Bean", "Chile", "Tomato"]
+tags: ["Main"]
 ---
 
-What's more personal than a chili recipe? This is my own chili recipe, inspired by my mother's and my time spent in Boston. Hope you enjoy it!
+My favorite thing about winter? _It’s chili season._ Can you make chili during the other seasons? Sure, and I do, but when winter rolls around chili’s always the first thing that comes to mind.
+
+Now this is a bright chili. Between the red bell and anaheim peppers and the spice blend (hello, paprika! cinnamon!), the goal is for this to feel like something that picks you up rather than weighs you down. Feel free to mix up the spice blend. The candied bacon really does make it special though… I don’t recommend skipping that!
+
 
 ## Ingredients
 

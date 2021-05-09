@@ -4,7 +4,7 @@ author: Mary Schmidt
 date: "2020-06-06T00:00:00.824Z"
 description: Delicious pasta sauce!
 categories: ["Italian", "Meat", "Main", "Flexible", "Favorites"]
-tags: ["Main", "Pasta", "Italian", "Beef", "Flexible", "Tomato", "Lemon"]
+tags: ["Main", "Italian", "Flexible"]
 ---
 
 ## Ingredients
