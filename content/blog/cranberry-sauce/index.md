@@ -2,12 +2,20 @@
 title: Cranberry Sauce
 author: Mary Schmidt
 date: "2020-01-19T00:00:00.824Z"
-description: The first year I made these, my grandfather told me that in his 90 years of life, cranberries were the one food his family ate every year, even through poverty and the Great Depression. Out of all those cranberries, these were his favorite. I hope you enjoy them as well. 
+description: My grandfather ate cranberries every year of his life, even through the Great Depression. The first time I made these, I caught him looking at his Thanksgiving plate contemplatively. The way he was looking at that plate was not a way folks tend to examine food. So, nervous, I walked over to see what was up.
 categories: ["Holiday", "Side", "Favorites"]
 tags: ["Holiday", "Side", "Cranberry", "Orange"]
 ---
 
-The first year I made these, my grandfather told me that in his 90 years of life, cranberries were the one food his family ate every year, even through poverty and the Great Depression. Out of all those cranberries, these were his favorite. I hope you enjoy them as well.
+My grandfather ate cranberries every year of his life, even through the Great Depression. The first time I made these, I caught him looking at his Thanksgiving plate contemplatively. The way he was looking at that plate was not a way folks tend to examine food. So, nervous, I walked over to see what was up. 
+
+“Hey Grandpa, how’s it going? Cranberries alright?”
+He set his fork down and paused, thinking again. Then finally, he said slowly “90 years, best cranberries.”
+
+So there you go. These earned Grandpa’s seal of approval and now they’re the only ones I make. I like to add cinnamon around the holidays. If you’re doing holiday cooking and have spent vanilla bean pods laying around, you could throw one of those in here as well. 
+
+Hope you enjoy these cranberries as much as I do!
+
 
 ## Ingredients
 

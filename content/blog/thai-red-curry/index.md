@@ -5,7 +5,7 @@ date: "2020-04-30T00:00:00.824Z"
 description: This is a base recipe for a Thai red curry I make almost weekly with whatever's in season. I like to make it with vegetables but you could easily add chicken for more protein. What's presented here is a wintry take on the curry.
 featuredImage: "red-curry.jpg"
 categories: ["Thai", "Main", "Vegan", "Vegetarian", "Flexible", "Favorites"]
-tags: ["Vegan", "Flexible", "Main", "Thai", "Squash", "Carrot", "Coconut"]
+tags: ["Vegan", "Flexible", "Main", "Thai"]
 ---
 
 This is a base recipe for a Thai red curry I make almost weekly with whatever's in season. I like to make it with vegetables but you could easily add chicken for more protein. What's presented here is a wintry take on the curry.

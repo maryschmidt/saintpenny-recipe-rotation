@@ -5,7 +5,7 @@ date: "2020-10-30T00:00:00.824Z"
 description: Brussels sprouts were one of those "adult" foods I just never grew into. After what seemed like a requisite number of years following our graduation from college, friends and colleagues began to talk about brussels sprouts being a staple in their weekday diet and it absoultely baffled me. Brussels sprouts? Yep.
 featuredImage: "brussels-sprouts.jpg"
 categories: ["Side", "Vegan", "Vegetarian", "Quick"]
-tags: ["Holiday", "Side", "Brussels sprouts", "Lemon"]
+tags: ["Holiday", "Side"]
 ---
 
 Brussels sprouts were one of those "adult" foods I just never grew into. After what seemed like a requisite number of years following our graduation from college, friends and colleagues began to talk about brussels sprouts being a staple in their weekday diet and it absoultely baffled me. Brussels sprouts? Yep.
